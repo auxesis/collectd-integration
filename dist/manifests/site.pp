@@ -59,6 +59,7 @@ node default {
   } ->
 
   jently::instance { 'collectd':
+    # FIXME(auxesis): look up the credentials with Heira
     github_login      => 'foo',
     github_password   => 'bar',
     github_repository => 'https://github.com/collectd/collectd.git',
