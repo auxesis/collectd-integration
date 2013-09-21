@@ -1,0 +1,4 @@
+proxy_cache_path  /srv/www/reverse_proxy/cache levels=1:2 keys_zone=application_cache:8m max_size=1000m inactive=600m;
+proxy_temp_path   /srv/www/reverse_proxy/cache/tmp;
+
+
